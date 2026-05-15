@@ -3,12 +3,27 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Página Web</title>
+  <title>Mi Página Interactiva</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <h1>Bienvenido a mi sitio</h1>
-  <p>Este es un ejemplo publicado con GitHub Pages.</p>
+  <p>Ahora puedes interactuar con botones y una barra de búsqueda.</p>
+
+  <!-- Botón interactivo -->
+  <button onclick="mostrarMensaje()">Haz clic aquí</button>
+
+  <!-- Barra de búsqueda -->
+  <form onsubmit="buscar(event)">
+    <input type="text" id="busqueda" placeholder="Escribe algo...">
+    <button type="submit">Buscar</button>
+  </form>
+
+  <!-- Resultado de búsqueda -->
+  <p id="resultado"></p>
+
+  <!-- Imagen -->
   <img src="miimagen.png" alt="Imagen de ejemplo">
 </body>
 </html>
